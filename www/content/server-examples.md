@@ -2,13 +2,13 @@
 title = "Server-Side Examples"
 +++
 
-There are many examples of integrating htmx with server-side frameworks available on GitHub. Generally speaking,
-most server-side frameworks are already pretty well set up to integrate with htmx - after all, most of them were
-rendering HTML long before JSON became popular.
+There are many examples of integrating htmx with server-side frameworks available on GitHub. Generally speaking, most
+server-side frameworks are already pretty well set up to integrate with htmx - after all, most of them were rendering
+HTML long before JSON became popular.
 
 Different frameworks and platforms may offer alternative systems for installing htmx - for example, in the Java / JVM
-ecosystem, [WebJars](https://www.webjars.org) allows the use of npm packages with popular Java build tools such as
-Maven and Gradle.
+ecosystem, [WebJars](https://www.webjars.org) allows the use of npm packages with popular Java build tools such as Maven
+and Gradle.
 
 These examples may make it a bit easier to get started using htmx with your platform of choice.
 
@@ -116,8 +116,9 @@ These examples may make it a bit easier to get started using htmx with your plat
 - <https://github.com/beechnut/pokebutt-htmx>
 
 ## Scala
-  
+
 ### http4s
+
 - <https://github.com/martinprobson/http4s-htmx-demo>
 
 ## Kotlin
@@ -144,7 +145,6 @@ These examples may make it a bit easier to get started using htmx with your plat
 ### CodeIgniter 4
 
 - <https://github.com/michalsn/codeigniter-htmx-demo>
-
 
 ### Laravel
 

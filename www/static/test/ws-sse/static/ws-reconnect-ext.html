@@ -1,14 +1,15 @@
 <html>
-<head>
+  <head>
     <script src="../../src/htmx.js"></script>
     <title>WebSockets Test</title>
-</head>
-<body hx-ws="connect:wss://echo.websocket.org">
-
+  </head>
+  <body hx-ws="connect:wss://echo.websocket.org">
     <form hx-ws="send">
-        Send Message to Echo Server...<br>
-        <textarea name="message" style="width:500px; height:300px;">&lt;div id="idMessage"&gt;This Is The Message&lt;div&gt;</textarea>
-        <br/><input type="submit"/>
+      Send Message to Echo Server...<br />
+      <textarea name="message" style="width: 500px; height: 300px">
+&lt;div id="idMessage"&gt;This Is The Message&lt;div&gt;</textarea
+      >
+      <br /><input type="submit" />
     </form>
 
     <!--
@@ -18,5 +19,5 @@
     <br><hr><br>
     <div id="idMessage"></div>
     -->
-</body>
+  </body>
 </html>

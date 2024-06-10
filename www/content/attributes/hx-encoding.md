@@ -11,4 +11,4 @@ The `hx-encoding` tag may be placed on parent elements.
 
 ## Notes
 
-* `hx-encoding` is inherited and can be placed on a parent element
+- `hx-encoding` is inherited and can be placed on a parent element

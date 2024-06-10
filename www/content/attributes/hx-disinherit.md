@@ -3,24 +3,27 @@ title = "hx-disinherit"
 +++
 
 The default behavior for htmx is to "inherit" many attributes automatically: that is, an attribute such as
-[hx-target](@/attributes/hx-target.md) may be placed on a parent element, and all child elements will inherit
-that target.
+[hx-target](@/attributes/hx-target.md) may be placed on a parent element, and all child elements will inherit that
+target.
 
-The `hx-disinherit` attribute allows you to control this automatic attribute inheritance. An example scenario is to 
-allow you to place an `hx-boost` on the `body` element of a page, but overriding that behavior in a specific part
-of the page to allow for more specific behaviors.
+The `hx-disinherit` attribute allows you to control this automatic attribute inheritance. An example scenario is to
+allow you to place an `hx-boost` on the `body` element of a page, but overriding that behavior in a specific part of the
+page to allow for more specific behaviors.
 
 htmx evaluates attribute inheritance as follows:
 
-* when `hx-disinherit` is set on a parent node
-  * `hx-disinherit="*"` all attribute inheritance for this element will be disabled
-  * `hx-disinherit="hx-select hx-get hx-target"` disable inheritance for only one or multiple specified attributes
+- when `hx-disinherit` is set on a parent node
+  - `hx-disinherit="*"` all attribute inheritance for this element will be disabled
+  - `hx-disinherit="hx-select hx-get hx-target"` disable inheritance for only one or multiple specified attributes
 
 ```html
 <div hx-boost="true" hx-select="#content" hx-target="#content" hx-disinherit="*">
-  <a href="/page1">Go To Page 1</a> <!-- boosted with the attribute settings above -->
-  <a href="/page2" hx-boost="unset">Go To Page 1</a> <!-- not boosted -->
-  <button hx-get="/test" hx-target="this"></button> <!-- hx-select is not inherited -->
+  <a href="/page1">Go To Page 1</a>
+  <!-- boosted with the attribute settings above -->
+  <a href="/page2" hx-boost="unset">Go To Page 1</a>
+  <!-- not boosted -->
+  <button hx-get="/test" hx-target="this"></button>
+  <!-- hx-select is not inherited -->
 </div>
 ```
 
@@ -44,4 +47,4 @@ htmx evaluates attribute inheritance as follows:
 
 ## Notes
 
-* Read more about [Attribute Inheritance](@/docs.md#inheritance)
+- Read more about [Attribute Inheritance](@/docs.md#inheritance)

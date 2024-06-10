@@ -5,8 +5,8 @@ insert_anchor_links = "left"
 
 ## Server-side Integration Examples
 
-A list of [GitHub repositories showing examples of integration](@/server-examples.md) with a wide variety of
-server-side languages and platforms, including JavaScript, Python, Java, and many others.
+A list of [GitHub repositories showing examples of integration](@/server-examples.md) with a wide variety of server-side
+languages and platforms, including JavaScript, Python, Java, and many others.
 
 ## UI Examples
 
@@ -15,7 +15,7 @@ Below are a set of UX patterns implemented in htmx with minimal HTML and styling
 You can copy and paste them and then adjust them for your needs.
 
 | Pattern                                                                     | Description                                                                                    |
-|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | [Click To Edit](@/examples/click-to-edit.md)                                | Demonstrates inline editing of a data object                                                   |
 | [Bulk Update](@/examples/bulk-update.md)                                    | Demonstrates bulk updating of multiple rows of data                                            |
 | [Click To Load](@/examples/click-to-load.md)                                | Demonstrates clicking to load more rows in a table                                             |

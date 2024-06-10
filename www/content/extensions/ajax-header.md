@@ -16,6 +16,6 @@ This header is commonly used by javascript frameworks to differentiate ajax requ
 
 ```html
 <body hx-ext="ajax-header">
- ...
+  ...
 </body>
 ```

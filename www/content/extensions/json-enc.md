@@ -13,5 +13,5 @@ This extension encodes parameters in JSON format instead of url format.
 ## Usage
 
 ```html
-<div hx-post='/test' hx-ext='json-enc'>click me</div>
+<div hx-post="/test" hx-ext="json-enc">click me</div>
 ```

@@ -17,8 +17,8 @@ template = "talk.html"
 
 [#htmx on Stack Overflow](https://stackoverflow.com/questions/tagged/htmx)
 
-(NB: *Please post the StackOverflow question URL to the [Discord](https://htmx.org/discord) after creating the question for 
-faster service.)*
+(NB: _Please post the StackOverflow question URL to the [Discord](https://htmx.org/discord) after creating the question
+for faster service.)_
 
 [r/htmx on reddit](https://www.reddit.com/r/htmx/)
 

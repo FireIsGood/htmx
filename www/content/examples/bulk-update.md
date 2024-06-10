@@ -3,40 +3,36 @@ title = "Bulk Update"
 template = "demo.html"
 +++
 
-This demo shows how to implement a common pattern where rows are selected and then bulk updated.  This is
-accomplished by putting a form around a table, with checkboxes in the table, and then including the checked
-values in the form submission (`POST` request):
+This demo shows how to implement a common pattern where rows are selected and then bulk updated. This is accomplished by
+putting a form around a table, with checkboxes in the table, and then including the checked values in the form
+submission (`POST` request):
 
 ```html
-<form id="checked-contacts"
-      hx-post="/users"
-      hx-swap="outerHTML settle:3s"
-      hx-target="#toast">
-    <table>
-      <thead>
+<form id="checked-contacts" hx-post="/users" hx-swap="outerHTML settle:3s" hx-target="#toast">
+  <table>
+    <thead>
       <tr>
         <th>Name</th>
         <th>Email</th>
         <th>Active</th>
       </tr>
-      </thead>
-      <tbody id="tbody">
-        <tr>
-          <td>Joe Smith</td>
-          <td>joe@smith.org</td>
-          <td><input type="checkbox" name="active:joe@smith.org"></td>
-        </tr>
-        ...
-      </tbody>
-    </table>
-    <input type="submit" value="Bulk Update">
-    <span id="toast"></span>
+    </thead>
+    <tbody id="tbody">
+      <tr>
+        <td>Joe Smith</td>
+        <td>joe@smith.org</td>
+        <td><input type="checkbox" name="active:joe@smith.org" /></td>
+      </tr>
+      ...
+    </tbody>
+  </table>
+  <input type="submit" value="Bulk Update" />
+  <span id="toast"></span>
 </form>
 ```
 
-The server will bulk-update the statuses based on the values of the checkboxes.
-We respond with a small toast message about the update to inform the user, and
-use ARIA to politely announce the update for accessibility.
+The server will bulk-update the statuses based on the values of the checkboxes. We respond with a small toast message
+about the update to inform the user, and use ARIA to politely announce the update for accessibility.
 
 ```css
 #toast.htmx-settling {
@@ -44,15 +40,14 @@ use ARIA to politely announce the update for accessibility.
 }
 
 #toast {
-  background: #E1F0DA;
+  background: #e1f0da;
   opacity: 0;
   transition: opacity 3s ease-out;
 }
 ```
 
-The cool thing is that, because HTML form inputs already manage their own state,
-we don't need to re-render any part of the users table. The active users are
-already checked and the inactive ones unchecked!
+The cool thing is that, because HTML form inputs already manage their own state, we don't need to re-render any part of
+the users table. The active users are already checked and the inactive ones unchecked!
 
 You can see a working example of this code below.
 

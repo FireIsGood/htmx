@@ -3,34 +3,33 @@ title = "Modal Dialogs in Bootstrap"
 template = "demo.html"
 +++
 
-Many CSS toolkits include styles (and Javascript) for creating modal dialog boxes. 
-This example shows how to use HTMX alongside original JavaScript provided by Bootstrap.
+Many CSS toolkits include styles (and Javascript) for creating modal dialog boxes. This example shows how to use HTMX
+alongside original JavaScript provided by Bootstrap.
 
-We start with a button that triggers the dialog, along with a DIV at the bottom of your 
-markup where the dialog will be loaded:
+We start with a button that triggers the dialog, along with a DIV at the bottom of your markup where the dialog will be
+loaded:
 
 ```html
-<button 
-    hx-get="/modal" 
-    hx-target="#modals-here" 
-    hx-trigger="click" 
-    data-bs-toggle="modal" 
-    data-bs-target="#modals-here"
-    class="btn btn-primary">Open Modal</button>
+<button
+  hx-get="/modal"
+  hx-target="#modals-here"
+  hx-trigger="click"
+  data-bs-toggle="modal"
+  data-bs-target="#modals-here"
+  class="btn btn-primary"
+>
+  Open Modal
+</button>
 
-<div id="modals-here"
-    class="modal modal-blur fade"
-    style="display: none"
-    aria-hidden="false"
-    tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content"></div>
-    </div>
+<div id="modals-here" class="modal modal-blur fade" style="display: none" aria-hidden="false" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content"></div>
+  </div>
 </div>
 ```
 
-This button uses a `GET` request to `/modal` when this button is clicked.  The
-contents of this file will be added to the DOM underneath the `#modals-here` DIV.
+This button uses a `GET` request to `/modal` when this button is clicked. The contents of this file will be added to the
+DOM underneath the `#modals-here` DIV.
 
 The server responds with a slightly modified version of Bootstrap's standard modal
 
