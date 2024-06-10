@@ -31,8 +31,8 @@
     "ws-tests": "cd ./test/ws-sse && node ./server.js",
     "www": "bash ./scripts/www.sh",
     "uglify": "uglifyjs -m eval -o dist/htmx.min.js dist/htmx.js",
-    "lint": "prettier --check www/",
-    "format": "prettier --write www/"
+    "lint": "prettier . --check --log-level=warn",
+    "format": "prettier . --write --log-level=warn"
   },
   "repository": {
     "type": "git",
