@@ -11,12 +11,9 @@ using the [`htmx:confirm`](@/events.md#htmx:confirm) event.
 We first have a button that should not issue a request until an auth token has been retrieved:
 
 ```html
-  <button hx-post="/example" hx-target="next output">
-    An htmx-Powered button
-  </button>
-  <output>
-    --
-  </output>
+<button hx-post="/example" hx-target="next output">An htmx-Powered button</button>
+
+<output> -- </output>
 ```
 
 Next we will add some scripting to work with an `auth` promise (returned by a library):
