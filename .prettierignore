@@ -1,0 +1,15 @@
+# No JS for us!
+src/
+dist/
+
+# Build files
+www/static/
+
+# Config files
+LICENSE
+netlify.toml
+pnpm-lock.yaml
+package-lock.json
+
+# Zola templates (Only god can save you there)
+**/templates/
